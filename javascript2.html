@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="google" value="notranslate">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // var nota = parseInt(prompt("Ingrese la nota dada por el docente:"))
+    // var notaAprobatoria = nota >= 3.0
+    // document.write("Aprobó?? " + notaAprobatoria)
+
+    // var numero = parseFloat(prompt("Ingrese un numero:"))
+    // var residuo = numero%2
+    // var par = residuo == 0
+    // document.write("El numero " + numero + " es par? " + par)
+
+    // "Y" = &&
+    // "O" = ||
+    // "Negacion" !
+
+    // var animal = prompt("ingrese nal ")
+    // var mascota = animal == "Gato"|| animal == "Pajaro"|| animal == "Perro"
+    // var adopta = mascota
+    // document.write("es una mascota apta para adoptar??? " + adopta)
+
+    // var estacion = prompt("ingrese nombre animal ")
+    // var tiempoSiembra = estacion == "Verano" || estacion == "otoño"
+    // document.write("esta epoca del año es apta para sembrar??? " + tiempoSiembra)
+
+    // var temperatura = parseFloat(prompt("ingrese temperatura "))
+    // if(temperatura > 20){
+    //     document.write("está haciendo calor")
+    // } else if(temperatura >= 18){
+    //     document.write("el clima está perfecto")
+    // } else{
+    //     document.write("está haciendo frio")
+    // }
+
+    // var tiempoSembrar = prompt("ingrese en que estación está")
+    // if(tiempoSembrar == "Verano" || tiempoSembrar == "Otoño"){
+    //     mensaje = "Es un buen momento para sembrar"
+    // } else{
+    //     mensaje = "No es un buen momento para sembrar"
+    // }
+    // document.write(mensaje)
+
+    // var num1 = parseFloat(prompt("ingrese un numero"))
+    // var operador = prompt("Que operacion quiere realizar")
+    // var num2 = parseFloat(prompt("ingrese un numero"))
+    // var resultado = 0
+    
+    // if(operador == "+"){
+    //     resultado = num1+num2
+    // } else if(operador == "-"){
+    //     resultado = num1-num2
+    // } else if(operador == "*"){
+    //     resultado = num1*num2
+    // } else if(operador == "/"){
+    //     resultado = num1/num2
+    // } else if(operador == "**"){
+    //     resultado = num1**num2
+    // } else if(operador == "%"){
+    //     resultado = num1%num2
+    // } else{
+    //     document.write("La operacion no existe")
+    // }
+    // document.write(num1 + operador + num2 + "=" + resultado)
+
+    var nota = parseFloat(prompt("Ingrese su nota"))
+    var letra = ""
+    if(nota >= 0 && nota < 3){
+        letra = "I"
+    } else if(nota >= 3 && nota < 4){
+        letra = "A"
+    } else if(nota >= 4 && nota < 5){
+        letra = "S"
+    } else if(nota == 5){
+        letra = "E"
+    } else{
+        document.write("La nota no es valida")
+    }
+
+    if(letra != ""){
+        document.write("La letra asociada a la nota es: " + letra)
+    }
+
+</script>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google" content="notranslate" />
+    <title>Document</title>
+</head>
+<body>
+  <div class="transition">
+    Transiciones
+  </div>
+  <hr>
+  <from action="">
+    <label for="">Nombre</label>
+    <input type="text" placeholder="Nombre">
+    <label for="">Descripcion</label>
+    <textarea name="" id=""></textarea>
+    <label for="">Pais</label>
+    <select>
+      <option value="">--</option>
+      <option value="">Colombia</option>
+      <option value="">Francia</option>
+      <option value="">Alemania</option>
+    </select>
+    <button>Enviar</button>
+<hr>
+<div class="grid">
+    <div class="grid-item">1</div>
+    <div class="grid-item">2</div>
+    <div class="grid-item">3</div>
+    <div class="grid-item">4</div>
+    <div class="grid-item">5</div>
+    <div class="grid-item">6</div>
+    <div class="grid-item">7</div>
+    <div class="grid-item">8</div>
+  </div>
+</body>
+
+<style>
+.transition {
+    background-color: green;
+    color: white;
+    width: 100px;
+    height: 100px;
+    transition: width 2s;
+    transition-timing-function: ease-in-out;
+}
+
+.transition:hover{
+    width:300px;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 10px 20px;
+    margin: 8px;
+    display: inline-block;
+    border: 1px solid darkblue;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button{
+    border-radius: 5px;
+    color: white;
+    background-color: gray;
+    padding: 10px 20px;
+    margin: 8px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(223, 143, 85);
+}
+
+label{
+    font-family: Arial, helvetica, sans-serif;
+    margin: 5px;
+    font-weight: bold;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+    background-color: #15e2c0;
+    padding: 10px;
+}
+
+.grid>div{
+    text-align: center;
+    background-color: antiquewhite;
+    padding: 20px;
+    font-size: 30px;
+}
+
+@media screen and (max-width: 600px) {
+    button{
+        width: 200px;
+        background-color: red;
+    }
+}
+@media screen and (max-width: 600px) {
+    button{
+        width: 50px;
+        background-color: aqua;
+    }
+}
+</style>
+</html>

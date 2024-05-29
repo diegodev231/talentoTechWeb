@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="google" value="notranslate">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0 auto;
+        }
+        div{
+            margin: 0 auto;
+        }
+        h1{
+            width: max-content;
+            margin: 0 auto;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>
+            <script>
+                function suma(n1, n2){
+                    return n1+n2
+                }
+                function resta(n1, n2){
+                    return n1-n2
+                }
+                function multiplicacion(n1, n2){
+                    return n1*n2
+                }
+                function division(n1, n2){
+                    return n1/n2
+                }
+
+                var n1 = parseInt(prompt("Ingrese el numero 1"))
+                var n2 = parseInt(prompt("Ingrese el numero 2"))
+                var operacion =prompt("Ingrese la operacion")
+                var resultado = 0
+
+                switch (operacion) {
+                    case "suma":
+                        resultado = suma(n1, n2)
+                        break;
+                    case "resta":
+                        resultado = resta(n1, n2)
+                        break;
+                    case "multiplicacion":
+                        resultado = multiplicacion(n1, n2)
+                        break;
+                    case "Division":
+                        resultado = division(n1, n2)
+                        break;
+                }
+                document.write(resultado)
+                
+            </script>
+        </h1>
+    </div>
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="google" value="notranslate">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Nombre</th>
+            <th>Correo</th>
+            <th>Ciudad</th>
+            <th>Edad</th>
+            <th>Prodfesion</th>
+        </tr>
+        <tr>
+            <td>Lily</td>
+            <td>lily@gmail.com</td>
+            <td>Bogotá</td>
+            <td>36</td>
+            <td>Programador</td>
+        </tr>
+        <tr>
+            <td>Jefersson</td>
+            <td>Jefersson@gmail.com</td>
+            <td>Cali</td>
+            <td>23</td>
+            <td>Mecanico</td>
+        </tr>
+        <tr>
+            <td>Juan</td>
+            <td>Juan@gmail.com</td>
+            <td>Popayan</td>
+            <td>15</td>
+            <td>Abogado</td>
+        </tr>
+        <tr>
+            <td>Ricardo</td>
+            <td>Ricardo@gmail.com</td>
+            <td>Manizales</td>
+            <td>33</td>
+            <td>Experto</td>
+        </tr>
+        <tr>
+            <td>Cesar</td>
+            <td>Cesar@gmail.com</td>
+            <td>Barranquilla</td>
+            <td>38</td>
+            <td>Veterinario</td>
+        </tr>
+        <tr>
+            <td>Nidia</td>
+            <td>Nidia@gmail.com</td>
+            <td>Ibague</td>
+            <td>10</td>
+            <td>Pizzero</td>
+        </tr>
+        <tr>
+            <td>Vicky</td>
+            <td>Vicky@gmail.com</td>
+            <td>Icononzo</td>
+            <td>11</td>
+            <td>Secretaria</td>
+        </tr>
+        <tr>
+            <td>William</td>
+            <td>William@gmail.com</td>
+            <td>Australia</td>
+            <td>40</td>
+            <td>Psicologo</td>
+        </tr>
+        <tr>
+            <td>Laura</td>
+            <td>Laura@gmail.com</td>
+            <td>Chia</td>
+            <td>32</td>
+            <td>N/A</td>
+        </tr>
+        <tr>
+            <td>Erika</td>
+            <td>Erika@gmail.com</td>
+            <td>Soacha</td>
+            <td>30</td>
+            <td>Vendedora</td>
+        </tr>
+        
+    </table>
+    <hr>
+    <!-- Formulario -->
+    <form method="post">
+        <!-- Campo de texto -->
+        <label for="">Nombre</label>
+        <input type="text" placeholder="Escriba el nombre" required name="nombre"> 
+        <!-- Salto de linea -->
+        <br>
+        <!-- Campo Fecha -->
+        <label for="">Fecha de nacimiento</label>
+        <input type="date" required max="2024-05-02" min="1900-01-01" value="2024-05-02" name="fecha_nacimiento">
+        <br>
+        <!-- Campo Numerico -->
+        <label for="">Ingresos mensuales</label>
+        <input type="number" required placeholder="Salario mensual" name="Ingresos">
+        <br>
+        <!-- Campo Email -->
+        <label for="">Correo electronico</label>
+        <input type="email" required placeholder="Ingresar Email" name="email"> <br>
+        <!-- Campo Archivo -->
+        <label for="">Subir CV</label>
+        <input type="file" required placeholder="Subir Archivo" accept="image/*" name="Subir"> <br>
+        <!-- Campo password -->
+        <label for="">Password</label>
+        <input type="password" required name="pass"> <br>
+        <!-- Campo Hora -->
+        <label for="">Hora de ingreso</label>
+        <input type="time" required name="hora_ingreso"> <br>
+        <!-- Campo Mes -->
+        <label for="">Mes de ingreso a la empresa</label>
+        <input type="month" required name="mes_ingreso"> <br>
+        <!-- Campo Color -->
+        <label for="">Color del uniforme</label>
+        <input type="color" required name="color_uniforme"> <br>
+        <!-- Campo Radio -->
+        <label for="">Genero</label>
+        <input type="radio" name="genero" value="F" required name="genero">
+        <label for="">Femenino</label>
+        <input type="radio" name="genero" value="M" required name="Femenino">
+        <label for="">Masculino</label> <br>
+        <!-- Campo Checkbox -->
+        <label for="">Dias Laborados</label>
+        <input type="checkbox" name="dias" value="1">
+        <label for="">Lunes</label>
+        <input type="checkbox" name="dias" value="2">
+        <label for="">Martes</label>
+        <input type="checkbox" name="dias" value="3">
+        <label for="">Miercoles</label>
+        <input type="checkbox" name="dias" value="4">
+        <label for="">Jueves</label>
+        <input type="checkbox" name="dias" value="5">
+        <label for="">Viernes</label> <br>
+        <!-- Campo URL -->
+        <label for="">Link Perfil Linkedin</label>
+        <input type="url" required name="Linkedin"> <br>
+        <!-- Campo Telefono -->
+        <label for="">Telefono</label>
+        <input type="tel" required name="tel"> <br>
+        <!-- Selector -->
+        <label for="">Escoja una ciudad</label>
+        <select name="" id="" required>
+            <option value="">-</option>
+            <option value="Manizales">Manizales</option>
+            <option value="Bogota">Bogota</option>
+            <option value="Cali">Cali</option>
+        </select> <br>
+        <!-- Fieldset -->
+        <fieldset>
+            <legend>Informacion General</legend>
+            <!-- Text Area -->
+            <label for="">Descripcion del Perfil</label>
+            <textarea name="" id=""></textarea> <br>
+            <label for="">Tipo documento</label>
+            <input list="documento" name="documento">
+            <!-- Datalist -->
+            <datalist id="documento">
+                <option value="Cedula">Cedula</option>
+                <option value="Tarjeta de Identidad">Tarjeta de Identidad</option>
+                <option value="Pasaporte">Pasaporte</option>
+            </datalist> <br>
+            <label for="">Cedula</label>
+            <input type="text">
+        </fieldset>
+        
+        <!-- Button -->
+        <button>Enviar</button>
+    </form>
+</body>
+</html>

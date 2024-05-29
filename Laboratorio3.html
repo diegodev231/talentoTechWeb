@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="google" value="notranslate">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0 auto;
+        }
+        div{
+            margin: 0 auto;
+        }
+        h1{
+            width: max-content;
+            margin: 0 auto;
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>
+            <script>
+                // Ejercicio 1.
+            
+                // var validaNum = parseFloat(prompt("Ingrese un número comprendido entre -∞ e ∞"))
+                //   if(validaNum == 0){
+                //     mensaje = "El nümero digitado es CERO"
+                // } else if(validaNum < 0){
+                //     mensaje = "El nümero digitado es NEGATIVO -"
+                // } else if(validaNum > 0){
+                //     mensaje = "El nümero digitado es POSITIVO +"
+                // } else{
+                //     document.write("El valor digitado NO es un número")
+                // }
+                // document.write(mensaje)
+            
+                // Ejercicio 2.
+            
+                // var numero = parseInt(prompt("Ingrese un número comprendido entre -∞ e ∞"))
+                // var residuo = numero%2
+                //     switch(residuo){
+                //         case 0:
+                //             mensaje = "El numero digitado es PAR"
+                //             break;
+                //         case 1:
+                //             mensaje = "El numero digitado es IMPAR"
+                //             break;
+                //     }
+                //     document.write(mensaje)
+                
+                // Ejercicio 3.
+            
+                // var edadVoto = parseInt(prompt("Digite su edad para validar si está habilitado para Votar"))
+                //     if(edadVoto < 18){
+                //         mensaje = "Recuerde que la edad minima para ejercer su derecho al Voto es 18"
+                //     } else if(edadVoto > 17){
+                //         mensaje = "Por favor en la siguiente mesa revise la lista y ubique su puesto de votacion"
+                //     } else{
+                //         mensaje = "El valor digitado no es valido, intente nuevamente"
+                //         setTimeout(()=>{
+                //             location.href = location.href
+                //         },3000);
+                //     }
+                //     document.write(mensaje)
+                
+                // Ejercicio 4.
+            
+                // var num1 = parseFloat(prompt("Ingrese un número comprendido entre -∞ e ∞"))
+                // var num2 = parseFloat(prompt("Ingrese un número comprendido entre -∞ e ∞"))
+                //     if (num1>num2) {
+                //         mensaje ="El valor " + num1 + " el cual fue el primer valor digitado es mayor que el segundo " + num2
+                //     } else if (num2>num1) {
+                //         mensaje ="El valor " + num2 + " el cual fue el segundo valor digitado es mayor que el primero " + num1
+                //     } else if (num1=num2) {
+                //         mensaje ="El primer valor " + num1 + " y el segundo " + num1 + " son iguales"
+                //     } else{
+                //         mensaje ="Alguno de los valores digitados no es valido"
+                //     }
+                //     document.write(mensaje)
+                
+                // Ejercicio 5.
+            
+                // var valorProduct = parseFloat(prompt("Por favor ingrese el valor del producto"))
+                // const DESCUENTO_10 = 0.1
+                //     if (valorProduct <= 100) {
+                //         mensaje ="Total a pagar: " + valorProduct
+                //     } else{
+                //         mensaje ="Total a pagar incluido el descuento del 10%: " + (valorProduct-(valorProduct*DESCUENTO_10))
+                //     }
+                //     document.write(mensaje)
+                
+                // Ejercicio 6.
+            
+                var numDia = parseInt(prompt("Ingrese un numero del 1 al 7"))
+                const DIAS_SEM = {
+                    1: 'Lunes',
+                    2: 'Martes',
+                    3: 'Miercoles',
+                    4: 'Jueves',
+                    5: 'Viernes',
+                    6: 'Sabado',
+                    7: 'Domingo',
+                }
+                const DIA_NO_SEM = 'Numero no valido'
+                const DIA = DIAS_SEM[numDia] || DIA_NO_SEM
+                document.write(DIA)
+                
+                // Ejercicio 7.
+            
+                // var mes = parseInt(prompt("Ingrese un numero del 1 al 12"))
+                // const ESTACION_MES = {
+                //     1: 'Invierno',
+                //     2: 'Invierno',
+                //     3: 'Primavera',
+                //     4: 'Primavera',
+                //     5: 'Primavera',
+                //     6: 'Verano',
+                //     7: 'Verano',
+                //     8: 'Verano',
+                //     9: 'Otoño',
+                //     10: 'Otoño',
+                //     11: 'Otoño',
+                //     12: 'Invierno',
+                // }
+                // const NO_MES = 'Numero no valido'
+                // const ESTA_MES = ESTACION_MES[mes] || NO_MES
+                // document.write(ESTA_MES)
+            
+            </script>
+        </h1>
+    </div>
+</body>
+
+</html>
