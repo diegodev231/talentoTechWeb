@@ -134,17 +134,19 @@
                 <option value="dark">dark</option>
             </select>
             <br>
-            <select name="" id="tamanos" onchange="cambioTamano()">
-                <option value="100px">small</option>
-                <option value="400px">med</option>
-                <option value="900px">big</option>
-            </select>
+            
         </div>
     </div>
 
     <div class="work_space">
         <div class="div_unp">
             <img src="https://www.unp.gov.co/wp-content/uploads/2018/12/logos-unp-ministerio-1-copia.png" alt="Logo UNP" class="unp" id="banner">
+            <br>
+            <select name="" id="tamanos" onchange="cambioTamano()">
+                <option value="small">Small</option>
+                <option value="med">Medium</option>
+                <option value="big">Large</option>
+            </select>
         </div>
     
         <div>
@@ -347,19 +349,7 @@
             input.value = '';
         });
     }
-    // function cambiarColor(color){   
-    //     // Obtenemos el valor del selector
-    //     var seccion_seleccionada = document.getElementById("logo").value
-    //     // Obtenemos el tamaño seleccionado
-    //     var tamano = document.getElementById("size").value
-    //     // Cambiamos el tamaño
-    //     document.getElementById(seccion_seleccionada).style.width = tamano
-    //     document.getElementById(seccion_seleccionada).style.height = tamano
-    //     // Cambiamos el color de fondo
-    //     document.getElementById(seccion_seleccionada).style.backgroundColor = color
-    //     // Cambiamos el color de texto
-    //     document.getElementById(seccion_seleccionada).style.color = 'white'        
-    // }
+    
     function cambioColor(){
         var body = document.getElementById("body")
         var colore = document.getElementById("colores").value
@@ -375,17 +365,19 @@
         body.style.backgroundColor = fondo
         body.style.color = letra
     }
-    //1313546
+
     function cambioTamano(){
         var baner = document.getElementById("banner")
         var tamano = document.getElementById("tamanos").value
-        if (tamano == "100px") {
-            baner.style.width = tamano            
-        } else if (tamano == "400px") {
-            baner.style.width = tamano
-        } else if (tamano == "900px") {
-            baner.style.width = tamano
+        var logoSize = 0
+        if (tamano == "small") {
+            logoSize = "400px"
+        } else if (tamano == "med") {
+            logoSize = "600px"
+        } else if (tamano == "big") {
+            logoSize = "1000px"
         }
+        baner.style.width = logoSize
     }
 </script>
 </html>
