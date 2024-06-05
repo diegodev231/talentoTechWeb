@@ -1,0 +1,11 @@
+{
+    "nombre": "vicky",
+    "apellido": "sanchez",
+    "edad": "37",
+    "mascotas": [
+        {
+            "nombre": "pancha",
+            "tipo": "gato"
+        }
+    ]
+}
